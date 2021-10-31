@@ -133,7 +133,7 @@ The idea of distributed cognition really excites me. I especially like how autho
 
 Another theoretical foundation that is innovative from my perspective is the play theory. The authors talk about the casual readers of visualization, which I believe will become increasingly mainstream as the data generation (IoT, social media), display technology (ubiquitous computing surface, VRAR), and visualization techniques develop in today's world. I am interested in how insights from game design and gamification may bring values to visualization design.
 
-
+Update: It occurs to me that D3.js actually mirrors the idea of "what" in this typology, where output is the input of next action in a chain of methods. 
 
 #### [The Eyes Have It](https://www.cs.umd.edu/~ben/papers/Shneiderman1996eyes.pdf) by Ben Shneiderman
 
