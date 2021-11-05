@@ -151,3 +151,14 @@ Many of the ideas have been implemented and taken for granted for today's visual
 
 I realized that I need to pick up the pace with reading, so I plan to write more brief reflections for the papers to come, except when I really have something to express.
 
+#### [Exploration and Visualization in the Web of Big Linked Data: A Survey of the State of the Art](https://www.semanticscholar.org/paper/Exploration-and-Visualization-in-the-Web-of-Big-A-Bikakis-Sellis/a979fec7e4803af4068cd83f75eb15bb09d79989) by Nikos Bikakis & Timos Sellis
+
+I find the definitions in this paper (some of them also borrowing from previous literature) very clear and compelling, marking a few here:
+
+"The purpose of *data exploration* and *visualization* is to offer ways for information perception and manipulation, as well as knowledge extraction and inference."
+
+"In an *exploration scenario*, it's common that users are interested in finding something interesting and useful without previously know what exactly are searching for, until the time they identify it."
+
+"In order to tackle both performance and presentations issues, ... *approximation techniques* (a.k.a. *data reduction* techniques) ... sampling and filtering ... or/and aggregation (binning, clustering) ...  *incremental* (a.k.a. *progressive*) techniques ... results/visual elements are computed/constructed incrementally based on user interaction or as time progresses."
+
+Customization for diverse users "systems should allow the user to: (1) organize data into different ways, according to the type of information or the level of detail she wishes to explore (e.g., [hierarchical aggregation framework for efficient multilevel visual exploration](https://www.semanticscholar.org/paper/A-hierarchical-aggregation-framework-for-efficient-Bikakis-Papastefanatos/b9a542b02afeb6fbd6f3b61b6acaf065ab406bf5)); (2) modify approximation criteria, thresholds, sampling rates, etc. (e.g., [78]); (3) define her own operations for data manipulation and analysis (e.g., aggregation, statistical, filtering functions); "
