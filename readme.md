@@ -162,3 +162,26 @@ I find the definitions in this paper (some of them also borrowing from previous 
 "In order to tackle both performance and presentations issues, ... *approximation techniques* (a.k.a. *data reduction* techniques) ... sampling and filtering ... or/and aggregation (binning, clustering) ...  *incremental* (a.k.a. *progressive*) techniques ... results/visual elements are computed/constructed incrementally based on user interaction or as time progresses."
 
 Customization for diverse users "systems should allow the user to: (1) organize data into different ways, according to the type of information or the level of detail she wishes to explore (e.g., [hierarchical aggregation framework for efficient multilevel visual exploration](https://www.semanticscholar.org/paper/A-hierarchical-aggregation-framework-for-efficient-Bikakis-Papastefanatos/b9a542b02afeb6fbd6f3b61b6acaf065ab406bf5)); (2) modify approximation criteria, thresholds, sampling rates, etc. (e.g., [78]); (3) define her own operations for data manipulation and analysis (e.g., aggregation, statistical, filtering functions); "
+
+#### [Polaris](http://graphics.stanford.edu/papers/polaris_extended/polaris.pdf) by Chris Stolte et al.
+
+Cannot believe this is published in 2001, reading this paper explains so much about the layout of many of today's best visualization software GUI (Tableau, Power BI, Voyager 2, DataTone, ...) There are so many to learn from this paper but I am most inspired by the following: 
+
+To handle multidimensional data, authors make the most out of the Pivot Table interface to create highly customizable facted visualizations. 
+
+The idea of X,Y,Z shelves allow flexible and intuitive specification, while the Table Algebra (Concatenation, Cross, Nest) bridge the user specification with interface layout. 
+
+Authors propose to divide "graphics into three families by the type of fields assigned to their axes", then summarize the common goals analysts have when using this family of graphic (very insightful):
+
+> - ordinal - ordinal: understanding patterns and trends in some function f(􏰁Ox ; Oy ) -> R, (R represents the fields encoded in the retinal properties of the marks)
+> - ordinal - quantitative: understand or compare the properties of some set of functions f􏰁(O)􏰂 -> Q.
+> - quantitative - quantitative: understand the distribution of data as a function of one or both quantitative variables and to discover causal relationships between the two quantitative variables. 
+
+When discussiong data transformations, authors analyze how each transformation may turn one Q into O (e.g. Partitioning) or O into Q (e.g. Counting), which in turns affect layout and display. This ties with how table algebra is designed.
+
+SELECT {dim} {aggregates} GROUP BY {G} HAVING {filters} ORDER BY {S}   
+
+Using Having instead of Where because some filter operates on aggregated values
+
+There are difference between the aggregation happening when partitioning the data into panes of the "pivot table" and the aggregation happening during visual specification or retina properties.
+
